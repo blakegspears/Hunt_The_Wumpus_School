@@ -41,7 +41,7 @@ Enter the Wumpus' room.
 Fall into a pit.
 Run out of arrows without killing the Wumpus.
 
-<pre class="mermaid">
+```mermaid
 flowchart TD
     start([Start Game]) --> decide{Move or Shoot?}
     decide --> move[Move to a room]
@@ -64,4 +64,3 @@ flowchart TD
     wumpus --> end
     bats --> decide
     hit --> end[You Win!]
-</pre>
