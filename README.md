@@ -3,6 +3,7 @@ Objective:
 Your goal is to navigate through a cave system, avoid hazards, and kill the Wumpus using a single arrow before the Wumpus kills you or you fall into a pit.
 
 Game Setup
+
 The cave consists of 20 interconnected rooms arranged in a circular pattern.
 Each room has three exits leading to other rooms:
 Two adjacent rooms (numerically consecutive, e.g., room 5 connects to rooms 4 and 6).
@@ -15,6 +16,7 @@ Bottomless Pits: If you fall into a pit, you lose the game.
 Super Bats: These creatures will pick you up and drop you into a random room, which might be hazardous.
 
 Game Mechanics
+
 Start Location:
 You begin in a random room with no hazards.
 You'll see a description of your current room and its connections.
