@@ -60,7 +60,7 @@ flowchart TD
     safe --> decide
     miss --> decide
 
-    pit --> end[Game Over]
-    wumpus --> end
+    pit --> game_over[Game Over]
+    wumpus --> game_over
     bats --> decide
-    hit --> end[You Win!]
+    hit --> victory[You Win!]
