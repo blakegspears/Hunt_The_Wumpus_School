@@ -40,3 +40,28 @@ Losing the Game:
 Enter the Wumpus' room.
 Fall into a pit.
 Run out of arrows without killing the Wumpus.
+
+<pre class="mermaid">
+flowchart TD
+    start([Start Game]) --> decide{Move or Shoot?}
+    decide --> move[Move to a room]
+    decide --> shoot[Shoot into a room]
+    
+    move --> hazard{Hazard Encountered?}
+    hazard --> pit[Fall into a Pit<br>Game Over]
+    hazard --> bats[Bats Pick You Up<br>Move to Random Room]
+    hazard --> wumpus[Enter Wumpus' Room<br>Game Over]
+    hazard --> safe[Room is Safe<br>Continue Exploring]
+
+    shoot --> hit[You Hit the Wumpus<br>Game Won!]
+    shoot --> miss[Missed the Wumpus<br>Wumpus Moves]
+    miss --> hazard
+
+    safe --> decide
+    miss --> decide
+
+    pit --> end[Game Over]
+    wumpus --> end
+    bats --> decide
+    hit --> end[You Win!]
+</pre>
